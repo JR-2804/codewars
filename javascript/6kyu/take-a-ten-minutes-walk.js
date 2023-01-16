@@ -17,17 +17,3 @@ const isValidWalk = (walk) => {
     travelData.e === travelData.w
   );
 };
-
-assert.strictEqual(
-  isValidWalk(['n', 's', 'n', 's', 'n', 's', 'n', 's', 'n', 's']),
-  true,
-);
-assert.strictEqual(
-  isValidWalk(['w', 'e', 'w', 'e', 'w', 'e', 'w', 'e', 'w', 'e', 'w', 'e']),
-  false,
-);
-assert.strictEqual(isValidWalk(['w']), false);
-assert.strictEqual(
-  isValidWalk(['n', 'n', 'n', 's', 'n', 's', 'n', 's', 'n', 's']),
-  false,
-);

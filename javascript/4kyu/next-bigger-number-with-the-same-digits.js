@@ -45,24 +45,3 @@ const nextBigger = (number) => {
 
   return index < permutations.length ? permutations[index + 1] : -1;
 };
-
-///////////////////////////////////////////////////////////////////////////////////////////////////
-
-// const number = 414;
-// const permutations = findPermutations(String(number).split(""));
-
-// console.log(permutations);
-
-// console.log(permutations.reduce(removeDuplicates, []));
-
-// const index = permutations.findIndex((n) => n === number);
-// const result = index < permutations.length ? permutations[index + 1] : -1;
-// console.log(permutations, index, result);
-
-///////////////////////////////////////////////////////////////////////////////////////////////////
-
-assert.strictEqual(nextBigger(12), 21);
-assert.strictEqual(nextBigger(513), 531);
-assert.strictEqual(nextBigger(2017), 2071);
-assert.strictEqual(nextBigger(414), 441);
-assert.strictEqual(nextBigger(144), 414);

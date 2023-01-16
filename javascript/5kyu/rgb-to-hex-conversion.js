@@ -30,8 +30,3 @@ const toRgbHex = (number) => {
 
 const rgb = (red, green, blue) =>
   `${toRgbHex(red)}${toRgbHex(green)}${toRgbHex(blue)}`;
-
-assert.strictEqual(rgb(255, 255, 255), "FFFFFF");
-assert.strictEqual(rgb(255, 255, 300), "FFFFFF");
-assert.strictEqual(rgb(0, 0, 0), "000000");
-assert.strictEqual(rgb(148, 0, 211), "9400D3");
